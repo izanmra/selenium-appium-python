@@ -59,6 +59,7 @@ class MemoPage:
 
     def back_to_home(self):
         self.wait.until(EC.element_to_be_clickable(self.navigate_up_button)).click()
+        
     def search_memo(self, query):
         self.wait.until(EC.element_to_be_clickable(self.search_button)).click()
         search_field = self.wait.until(EC.element_to_be_clickable(self.search_input))
